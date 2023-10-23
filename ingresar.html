@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="styles/iconos/favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style-ingresar.css">
+    <title>Renovavita Ingresar</title>
+</head>
+
+<!--Contenedor principal-->
+<nav>
+    <!--Menu cabecera-->
+<div class="flex_menu">
+    <div><a href="ingresar.html">Turnos</a></div>
+    <div><a href="servicios.html">Servicios</a></div>
+    <div><a href="obras.html">Obras Sociales</a></div>
+    <div><a href="contacto.html">Contactenos</a></div>
+    <div><a href="FAQ.html">FAQ</a></div>
+    <div class="ingresarc"><a href="ingresar.html">Ingresar</a></div>
+    <a href="#"><img src="./imagenes/facebook.png" alt="" height="19px" width="19px"></a>
+    <a href="#"><img src="./imagenes/instagram.png" alt="" height="19px" width="19px"></a>
+    <a href="#"><img src="./imagenes/Tweeter.png" alt="" height="19px" width="19px"></a>
+    <a href="#"><img src="./imagenes/whatsapp.png" alt="" height="19px" width="19px"></a>
+    <a href="#"><img src="./imagenes/gmail.png" alt="" height="19px" width="19px"></a>
+</div>
+</nav>
+
+<body onload="latitudLongitud()">
+    <!------------------>
+    <!--Cuerp INGRESAR-->
+    <!------------------>
+
+    <div class="contenedor">
+        <img class="background-image" src="./imagenes/BackgroundIngresar.png" alt="Background Image">
+        <a href="index.html" class="svg-link">
+            <img src="imagenes/isot.png" alt="Tu SVG" class="svg-icon">
+        </a>
+
+
+
+        <div class="formularioingreso">
+            <div class="titulo">
+                
+                <div class="isoform">
+                    <img src="./imagenes/IsotipoVerdeIG.png" alt="isotipo formulario">
+                </div>
+                <div class="ingresar">
+                    <span>Ingresar</span>
+                </div>
+            </div>
+
+            <form name="formIngreso">
+                <div class="tipodoc">
+                    <label for="tipodoc">Tipo de Documento:</label>
+                    <select id="tipodoc" name="tipodoc">
+                        <option value="opcion1">Seleccione</option>
+                        <option value="opcion2">D.N.I.</option>
+                        <option value="opcion3">Lib. Enrrolamiento</option>
+                        <option value="opcion4">Lib. Civica</option>
+                    </select>
+                </div>
+
+                <div class="nrodocumento">
+                    <label for="nroDocumento">Nro.Documento:</label>
+                    <input type="text" id="nroDocumento" name="nroDocumento">
+                </div>
+
+                <div id="msgTipo">
+                    <p></p>
+                </div>
+
+                <div id="msgNumero">
+                    <p></p>
+                </div>
+
+                <div class="clave">
+                    <label for="clave">Ingrese su clave:</label>
+                    <input type="password" id="clave" name="clave" required>
+                </div>
+
+                <div class="botonMuestro">
+                    <input type="button" id="b3" value="Ver" onclick="mostrarClave()">
+                </div>
+
+                <div class="olvide">
+                    <a href="#">Generar / Olvide PIN</a>
+                </div>
+
+                <div id="msgClave">
+                    <p></p>
+                </div>
+
+                <div class="botoningresar">
+                    <input type="button" title="En la consola veo los datos ingresados"   id="b1" value="INGRESAR" onclick="validarDatos()">
+                </div>
+
+                <div class="botonpreguntas">
+                    <input type="button" id="b2" value="PREGUNTAS FRECUENTES" onclick="redirigirPagina()">
+                </div>
+            </form>
+
+              
+            </div>
+
+        </div>
+        <script src="./scripts/ingresar.js"></script>
+</body>
+
+
+<footer>
+    <div class="flex_pie1">
+        <div>
+            <h3>TRABAJO DE CODO A CODO FS COMISION 23513 GRUPO 15</h3>
+            <h3 style="color: #A5A9A1;">Todos los derechos reservados</h3>
+            <div class="datosAPI">
+                <ul id="listaAPI">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+</footer>
+
+<footer>
+    <div class="flex_pie2">
+        <div>MAS INFORMACION :</div>
+        <div><a href="#">TRABAJE CON NOSOTROS</div>
+        <div><a href="#">POLITICA DE PRIVACIDAD</a></div>
+        <div><a href="contacto.html">CONTACTO</a></div>
+    </div>
+</footer>
+
+</html>

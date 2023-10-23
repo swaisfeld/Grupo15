@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="styles/iconos/favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Renovavita</title>
+</head>
+
+<body>
+    <nav>
+        <!-- Menú cabecera -->
+        <div class="flex_menu">
+            <div><a href="ingresar.html">Turnos</a></div>
+            <div><a href="servicios.html">Servicios</a></div>
+            <div><a href="obras.html">Obras Sociales</a></div>
+            <div><a href="contacto.html">Contactenos</a></div>
+            <div><a href="FAQ.html">FAQ</a></div>
+            <div class="ingresarc"><a href="ingresar.html">Ingresar</a></div>
+            <a href="#"><img src="imagenes/facebook.png" alt="" height="19px" width="19px"></a>
+            <a href="#"><img src="imagenes/instagram.png" alt="" height="19px" width="19px"></a>
+            <a href="#"><img src="imagenes/Tweeter.png" alt="" height="19px" width="19px"></a>
+            <a href="#"><img src="imagenes/whatsapp.png" alt="" height="19px" width="19px"></a>
+            <a href="#"><img src="imagenes/gmail.png" alt="" height="19px" width="19px"></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <a href="" class="svg-link">
+            <img src="imagenes/isot.png" alt="Tu SVG" class="svg-icon">
+        </a>
+        <div class="content">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar especialidad o profesional">
+            </div>
+            <div class="buttons">
+                <button class="turnos">Turnos</button>
+                <button class="buscar">Buscar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-slideshow">
+        <div class="slideshow-container">
+            <a href="ingresar.html" class="svg-link">
+                <img src="imagenes/turno.png" alt="imgturno" class="tuno">
+            </a>
+            <div class="my-slide fade">
+                <div class="slide-content">
+                    <img src="imagenes/TitularLogo.svg" alt="Imagen 1">
+                    <div class="promo-text">
+                        <h2>Promoción 1</h2>
+                        <p>Descripción de la promoción 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-slide fade">
+                <div class="slide-content">
+                    <img src="imagenes/carrusel 2p.jpg" alt="Imagen 2">
+                    <div class="promo-text">
+                        <h2>Promoción 2</h2>
+                        <p>Descripción de la promoción 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-slide fade">
+                <div class="slide-content">
+                    <img src="imagenes/carrusel 3p.jpg" alt="Imagen 3">
+                    <div class="promo-text">
+                        <h2>Promoción 3</h2>
+                        <p>Descripción de la promoción 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slideshow-controls">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+
+
+     <div class="promocion">
+        <div id="textoPromocional">
+            Solicita un asesor
+        </div>
+    </div>
+    <div class="formulario">
+        <form id="formularioContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <button type="submit" class="button-form">Enviar</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="flex_pie1">
+            <div>
+                <h3>TRABAJO DE CODO A CODO FS COMISION 23513 GRUPO 15</h3>
+                <h3 style="color: #A5A9A1;">Todos los derechos reservados</h3>
+            </div>
+        </div>
+    </footer>
+
+    <footer>
+        <div class="flex_pie2">
+            <div>MÁS INFORMACIÓN:</div>
+            <div><a href="#">TRABAJE CON NOSOTROS</a></div>
+            <div><a href="#">POLÍTICA DE PRIVACIDAD</a></div>
+            <div><a href="contacto.html">CONTACTO</a></div>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

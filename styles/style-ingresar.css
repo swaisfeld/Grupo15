@@ -1,0 +1,286 @@
+/*----------------------*/
+/* Estilos ingresar */
+/*----------------------*/
+
+.contenedor {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  background-image: url(./imagenes/BackgroundIngresar.png);
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+.formularioingreso {
+  position: relative;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  width: 350px;
+  height: 320px;
+  grid-area: formulario-ingreso;
+
+}
+
+/*ISOLOGO+LOGOTIPO*/
+.titulo {
+  /*Es el iso + logo*/
+  position: absolute;
+  display: flex;
+  top: 10px;
+  left: 25%;
+
+}
+
+.isoform img {
+  width: 23px;
+  height: auto;
+}
+
+.ingresar span {
+  font-size: 40px;
+  color: #239B95;
+  padding: 5px;
+}
+
+/*TIPO DE DOCUMENTO*/
+.tipodoc label {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #239B95;
+}
+
+.tipodoc select {
+  position: absolute;
+  top: 110px;
+  left: 10px;
+  border-width: 1px;
+  border-radius: 3px;
+  background-color: #D2BFA8;
+  border-color: #83ecd5;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#msgTipo p{ 
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  font-size: 11px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+/*NUMERO DE DOCUMENTO*/
+.nrodocumento label {
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #239B95;
+}
+
+.nrodocumento input {
+  position: absolute;
+  top: 110px;
+  left: 200px;
+  background-color: #D2BFA8;
+  font-size: 16px;
+  color: #1E1E1E;
+  border-radius: 3px;
+  border-color: #83ecd5;
+  width: 130px;
+  height: 20px;
+}
+
+#msgNumero p{
+  position: absolute;
+  top: 122px;
+  left: 200px;
+  font-size: 11px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+/*CLAVE*/
+.clave label {
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #239B95;
+}
+
+.clave input {
+  position: absolute;
+  width: 90px;
+  height: 20px;
+  top: 180px;
+  left: 10px;
+  background-color: #D2BFA8;
+  font-size: 16px;
+  border-radius: 3px;
+  border-color: #83ecd5;
+}
+
+/*BOTON MUESTRO CLAVE*/
+.botonMuestro input{
+  position: absolute;
+  top: 180px;
+  left: 110px;
+  background-color: #6EB8B3;
+  border-color: #6EB8B3;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 1px;
+  border-radius: 7px;
+  width: 50px;
+  text-decoration: none;
+  color: #565656;
+  cursor: pointer;
+}
+
+#msgClave p{
+  position: absolute;
+  top: 192px;
+  left: 10px;
+  font-size: 11px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.olvide a {
+  position: absolute;
+  top: 180px;
+  left: 180px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #567A04;
+}
+
+.olvide p:hover {
+  color: #239B95;
+}
+
+/*BOTON INGRESAR*/
+.botoningresar input {
+  position: absolute;
+  top: 225px;
+  left: 25px;
+  background-color: #6EB8B3;
+  border-color: #6EB8B3;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 7px;
+  width: 300px;
+  text-decoration: none;
+  color: #565656;
+  cursor: pointer;
+}
+
+/*BOTON PREGUNTAS*/
+.botonpreguntas input {
+  position: absolute;
+  top: 270px;
+  left: 25px;
+  background-color: #D2BFA8;
+  border-color: #6EB8B3;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 7px;
+  width: 300px;
+  text-decoration: none;
+  color: #565656;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 770px) {
+
+  /* Barra de navegación (media)*/
+  .flex_menu {
+    display: flex;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .isologotipopagina {
+    display: flex;
+    justify-content: center;
+    top: 10px;
+    padding: 5px;
+    grid-area: isologotipo-pagina;
+  }
+
+  .formularioingreso {
+    position: relative;
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 20px;
+    height: 320px;
+    justify-content: center;
+    margin: auto auto 20px auto;
+    grid-area: formulario-ingreso;
+
+  }
+
+}g
+
+
+/* Pie de página inferior */
+.flex_pie2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.6875rem; /* Aproximadamente 11px */
+  font-weight: bold;
+  gap: 1.5625rem; /* Aproximadamente 25px */
+  border-top: 1px solid #a5a9a1;
+  padding-top: 1.25rem; /* Aproximadamente 20px */
+  background-color: rgb(253, 253, 253);
+}
+
+.datosAPI ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+}
+.datosAPI li {
+  margin-right: 20px;
+  color:  #6EB8B3 ;
+  font-size: 12px;
+  font-weight: bold;
+}

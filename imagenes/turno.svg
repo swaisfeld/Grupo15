@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 353.05 353.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-3 {
+        fill: #6fb8b3;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 16px;
+      }
+
+      .cls-4 {
+        font-family: SairaExtraCondensed-Regular, 'Saira ExtraCondensed';
+        font-size: 50.43px;
+      }
+
+      .cls-5 {
+        font-family: SairaExtraCondensed-Thin, 'Saira ExtraCondensed';
+        font-size: 74.51px;
+        font-weight: 200;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <circle class="cls-3" cx="176.53" cy="176.53" r="168.53"/>
+    <text class="cls-1" transform="translate(66.44 136.12) scale(1.04 1)"><tspan class="cls-5"><tspan x="0" y="0">SOLICI</tspan><tspan class="cls-2" x="130.83" y="0">T</tspan><tspan x="151.09" y="0">AR</tspan></tspan><tspan class="cls-4"><tspan x="6.78" y="116.92">TURNO</tspan></tspan></text>
+  </g>
+</svg>

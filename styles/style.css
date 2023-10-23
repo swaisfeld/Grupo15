@@ -1,0 +1,350 @@
+/* Estilos base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Títulos h1 y h2 */
+h1,
+h2 {
+  color: #53aa9d;
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+/* Barra de navegación */
+.flex_menu {
+  display: flex;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  height: auto;
+  max-width: 100%;
+}
+
+.flex_menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex_menu a:hover {
+  color: #d2bfa8;
+}
+
+/* Redes sociales */
+.redes {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+/* Página principal */
+.flex_pagina1 {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+  background-image: url(https://www.therapy.com.mx/wp-content/uploads/2023/03/fisioterapia.jpg);
+  text-align: center;
+  max-width: 100%; /* Ancho máximo del contenedor */
+  margin: 0 auto;
+  padding: 200px; /* No es "relative" sino "20px" para establecer el relleno */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: auto; /* La altura se ajusta automáticamente al contenido */
+}
+
+/* Estilo para el contenido principal */
+.content {
+  margin-top: 20px; /* Espaciado superior entre el SVG y el contenido */
+  margin-left: 20px; /* Margen izquierdo entre el SVG y el contenido */
+}
+
+/* Estilo para el buscador */
+.search-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
+  position: relative;
+  z-index: 1; /* Colocar el buscador sobre la imagen de fondo */
+  top: 50%; /* Centrar verticalmente */
+  transform: translateY(-50%); /* Ajustar la posición vertical */
+}
+
+.search-box input[type="text"] {
+  width: 100%; /* Hacer que el input se extienda al 100% del ancho de su contenedor */
+  border: none;
+  font-size: 16px; /* Ajustar el tamaño de fuente según tu preferencia */
+  text-align: center;
+}
+
+/* Estilo para los botones */
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Estilo para el botón "Turnos" */
+.buttons .turnos {
+  background-color: #d2bfa8;
+}
+
+/* Estilo para el botón "Buscar" */
+.buttons .buscar {
+  background-color: #6eb8b3;
+}
+
+/* Estilo para el SVG */
+.svg-icon {
+  position: absolute;
+  top: 25px; /* Ajusta la distancia desde la parte superior según tu preferencia */
+  left: 60px; /* Ajusta la distancia desde la izquierda según tu preferencia */
+  max-width: 30%; /* Tamaño máximo del SVG en relación al contenedor */
+  height: auto; /* Para mantener la relación de aspecto */
+}
+
+/* Pie de página superior */
+.flex_pie1 {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  background-color: rgb(255, 255, 255);
+  color: #b1b1b1;
+}
+
+/* Pie de página inferior */
+.flex_pie2 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.6875rem; /* Aproximadamente 11px */
+  font-weight: bold;
+  gap: 1.5625rem; /* Aproximadamente 25px */
+  border-top: 1px solid #a5a9a1;
+  padding-top: 1.25rem; /* Aproximadamente 20px */
+  background-color: rgb(253, 253, 253);
+}
+
+.flex_pie2 div a {
+  text-decoration: none;
+  color: #a5a9a1;
+}
+
+.flex_pie2 div a:hover {
+  color: #0e645e;
+}
+
+/* Color para el div "ingresarc" */
+.ingresarc a {
+  color: #239b95;
+  text-decoration: none; /* Para eliminar el subrayado del enlace */
+}
+
+
+#altarenovatop {
+  width: 20vw;
+  height: 100vh;
+  background-image: url('/imagenes/imagen1.jpg'); /* Ruta ajustada para la carpeta "imagenes" */
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#altarenovatop::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #83BEBA;
+  opacity: 0.25;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#renovatop {
+  /* Agrega estilos adicionales para el contenido dentro del contenedor si es necesario */
+  position: relative;
+  z-index: 3;
+}
+
+/* Estilos para el slideshow */
+.my-slideshow {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative; /* Agregamos posición relativa para contener los controles y los puntos */
+}
+
+.slideshow-container {
+  background-color: #987cad;
+  overflow: hidden; /* Ocultamos cualquier contenido que se salga del contenedor */
+  position: relative; /* Agregamos posición relativa para los elementos hijos */
+}
+
+.my-slide {
+  display: none;
+}
+
+.my-slide img {
+  width: 100%;
+  height: auto;
+}
+/* Estilo para el png de turnos */
+.tuno {
+  position: absolute;
+  top: 20%; /* Ajusta la distancia desde la parte superior */
+  right: 5%; /* Ajusta la distancia desde la derecha */
+  width: 40%; /* Tamaño deseado, en este caso, el 30% del contenedor */
+  max-width: 120px; /* Ajusta el ancho máximo según tu preferencia */
+  height: auto; /* Mantiene la relación de aspecto */
+  z-index: 9999;
+}
+/* Estilos para el texto promocional */
+.promo-text {
+  position: absolute;
+  background-color: rgba(
+    152,
+    124,
+    173,
+    0.65
+  ); /* Color de fondo con 65% de opacidad */
+  color: white;
+  padding: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.promo-text h2 {
+  margin: 0;
+  font-size: 100px; /* Aumenta el tamaño del título */
+}
+
+.promo-text p {
+  margin: 10px 0;
+  font-size: 50px; /* Aumenta el tamaño del texto */
+}
+
+/* Estilos para los controles */
+.slideshow-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  left: 0; /* Colocamos el control de la izquierda a la izquierda */
+  right: 0; /* Colocamos el control de la derecha a la derecha */
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  font-size: 35px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.prev {
+  left: 0; /* Control prev a la izquierda */
+}
+
+.next {
+  right: 0; /* Control next a la derecha */
+}
+/* Estilos para los puntos indicadores */
+.dot-container {
+  text-align: center;
+  position: absolute;
+  bottom: 10px; /* Colocamos los puntos en la parte inferior */
+  left: 0;
+  right: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: t;
+
+}
+
+.promocion,
+.formulario {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #78d1cd;
+    color: #fff;
+    background: linear-gradient(to right, rgba(14, 100, 94, 0.25), rgba(14, 100, 94));
+    
+}
+
+#textoPromocional {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+#formularioContacto {
+    max-width: 300px;
+    width: 100%;
+    background-color: rgba(14, 100, 94, 0.25);
+    margin: 50px;
+}
+
+input,
+.button-form {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.button-form {
+    background-color: #fff;
+    color: #239B95;
+    cursor: pointer;
+}
